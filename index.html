@@ -9,7 +9,7 @@
         }
         .header {
             background-color: darkred;
-            height: 25vh; /* 1/4th of the screen height */
+            height: 25vh;
             position: relative;
             display: flex;
             align-items: flex-end;
@@ -36,7 +36,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 40px;
-            background-color: #e6a4b4; /* Blush red background */
+            background-color: #e6a4b4;
         }
         .who-am-i .image-container {
             position: relative;
@@ -47,24 +47,42 @@
         }
         .who-am-i .image-container img {
             position: relative;
-            width: 50%; /* Scales down to 50% of original size */
+            width: 50%;
             height: auto;
             z-index: 2;
         }
-        .who-am-i .image-container::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 100%;
-            height: 100%;
-            background-color: #e6a4b4; /* Blush red */
-            z-index: 1;
-        }
         .who-am-i .text-container {
             width: 50%;
-            background-color: #e6a4b4; /* Blush red */
+            background-color: #e6a4b4;
             padding: 20px;
+        }
+        .my-work-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .my-work-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: darkred;
+        }
+        .my-work {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .my-work img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s ease-in-out;
+        }
+        .my-work img:hover {
+            transform: scale(1.05);
+        }
+        .my-work .work-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
@@ -85,20 +103,44 @@
             </div>
             <div class="text-container">
                 <h2>Who am I</h2>
-                <p>My name is Noa Verschuren. I am 21 years old and I am a second year student of Creative Technology at the University of Twente. During my studies I have learned a lot. From designing in InDesign and Blender to programming in Processing and Python. In this portfolio I will show all the prjocets I have done during my studies. I will also show my personal projects which are more of the creative side then the technical side. Think off drawing/paining to crocheting. Enjoy scrolling and clicking through my personal and professional life!</p>
+                <p>My name is Noa Verschuren. I am 21 years old and I am a second year student of Creative Technology at the University of Twente. During my studies I have learned a lot. From designing in InDesign and Blender to programming in Processing and Python. In this portfolio I will show all the projects I have done during my studies. I will also show my personal projects which are more on the creative side than the technical side. Think of drawing/painting to crocheting. Enjoy scrolling and clicking through my personal and professional life!</p>
+            </div>
+        </section>
+
+        <section class="my-work-section">
+            <h2>My Work</h2>
+            <div class="my-work">
+                <div class="work-item"><a href="module1.html"><img src="module1.jpg" alt="Module 1"></a></div>
+                <div class="work-item"><a href="module2.html"><img src="module2.jpg" alt="Module 2"></a></div>
+                <div class="work-item"><a href="module3.html"><img src="module3.jpg" alt="Module 3"></a></div>
+                <div class="work-item"><a href="module4.html"><img src="module4.jpg" alt="Module 4"></a></div>
+                <div class="work-item"><a href="module5.html"><img src="module5.jpg" alt="Module 5"></a></div>
+                <div class="work-item"><a href="module6.html"><img src="module6.jpg" alt="Module 6"></a></div>
+                <div class="work-item"><a href="module7.html"><img src="module7.jpg" alt="Module 7"></a></div>
+                <div class="work-item"><a href="module8.html"><img src="module8.jpg" alt="Module 8"></a></div>
+                <div class="work-item"><a href="module9.html"><img src="module9.jpg" alt="Module 9"></a></div>
+                <div class="work-item"><a href="module10.html"><img src="module10.jpg" alt="Module 10"></a></div>
+                <div class="work-item"><a href="module11.html"><img src="module11.jpg" alt="Module 11"></a></div>
+                <div class="work-item"><a href="module12.html"><img src="module12.jpg" alt="Module 12"></a></div>
+            </div>
+        </section>
+
+<section class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+                <p>If you'd like to get in touch, feel free to reach out through any of the following methods:</p>
+                <p>Email: <a href="mailto:n.verschuren@student.utwente.com">n.verschuren@student.utwente.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/noa-verschuren" target="_blank">linkedin.com/in/noa-verschuren</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/noa.verschuren" target="_blank">@noa.verschuren</a></p>
+                <p>Phone: +31 6 3924 5841 </p>
             </div>
         </section>
     </div>
     
 </body>
 </html>
-</p>
-            </div>
-        </section>
-    </div>
-    
-</body>
-</html>
+
+
 
 
 
